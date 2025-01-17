@@ -14,6 +14,11 @@ import { StudioComponent } from './pages/components/studio/studio.component';
 import { LocationComponent } from './pages/components/location/location.component';
 import { FooterComponent } from './pages/components/footer/footer.component';
 import { FloatingButtonComponent } from './pages/components/floating-button/floating-button.component';
+import { ProceduresComponent } from './pages/procedures/procedures.component';
+import { ModelCourseComponent } from './pages/components/model-course/model-course.component';
+import { GalleryComponent } from './pages/components/gallery/gallery.component';
+import { PhotosModel1Component } from './pages/components/gallery/photos-model1/photos-model1.component';
+import { PhotosModel2Component } from './pages/components/gallery/photos-model2/photos-model2.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +33,12 @@ import { FloatingButtonComponent } from './pages/components/floating-button/floa
     StudioComponent,
     LocationComponent,
     FooterComponent,
-    FloatingButtonComponent
+    FloatingButtonComponent,
+    ProceduresComponent,
+    ModelCourseComponent,
+    GalleryComponent,
+    PhotosModel1Component,
+    PhotosModel2Component,
   ],
   imports: [
     BrowserModule,
