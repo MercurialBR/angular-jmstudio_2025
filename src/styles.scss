@@ -1,1 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+
+:root {
+  --primary-color: #203A76;
+  --back1-color: #DBDBDB;
+  --back2_opacity-color: #203a76b0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+
+  user-select: none;
+}
+
+body {
+  background-color: var(--back1-color);
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--primary-color);
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin: 0;
+}
+
+
+
+/* Scrollbar */
+body::-webkit-scrollbar {
+  width: 0.4rem;
+}
+body::-webkit-scrollbar-track {
+  background: var(--back1-color);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+}

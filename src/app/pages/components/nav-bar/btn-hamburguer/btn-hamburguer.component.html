@@ -1,0 +1,17 @@
+<div class="menu-container">
+  <button class="hamburger" (click)="toggleMenu()" title="Menu hamburger">
+    <div [class.open]="isMenuOpen"></div>
+    <div [class.open]="isMenuOpen"></div>
+    <div [class.open]="isMenuOpen"></div>
+  </button>
+
+  <div *ngIf="isMenuOpen" class="menu">
+    <ul>
+      <li><a href="" (click)="closeMenu()">HOME</a></li>
+      <li><a href="" (click)="closeMenu()">PRODUTOS</a></li>
+      <li><a href="" (click)="closeMenu()">QUEM SOMOS</a></li>
+      <li><a href="" (click)="closeMenu()">CADASTRE-SE</a></li>
+      <li><a href="" (click)="closeMenu()">SIMULE AQUI</a></li>
+    </ul>
+  </div>
+</div>

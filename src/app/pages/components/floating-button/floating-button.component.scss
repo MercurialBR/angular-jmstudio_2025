@@ -1,0 +1,34 @@
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: end;
+	position:fixed;
+	width:80px;
+	height:80px;
+	bottom:10px;
+	right:10px;
+
+	background-color:var(--primary-color);
+	color:#FFF;
+  border-radius: 90px 5px 5px 5px;
+  font-size: 45px;
+  z-index:100;
+  transition: .3s ease-in-out;
+}
+.container:hover {
+  scale: 1.1;
+}
+
+i {
+  color: var(--back1-color);
+}
+
+@media (min-width: 280px) and (max-width: 1023px) {
+  .container{
+    justify-content: center;
+    align-items: center;
+    width:70px;
+    height:70px;
+    border-radius: 100%;
+  }
+}
