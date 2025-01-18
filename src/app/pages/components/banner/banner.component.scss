@@ -44,7 +44,14 @@ h1 {
   transform: translate(-50%, -50%);
 
   z-index: 58;
+
 }
+.image_main {
+  filter: drop-shadow(0 0 .5rem rgba(0, 0, 0, 0.212));
+  box-shadow: 1px 1px .5rem rgb(0, 0, 0);
+  z-index: 58;
+}
+
 
 .watermark img {
   pointer-events: none;
@@ -67,6 +74,9 @@ h1 {
   .container {
     margin-top: 100px;
     height: 55vh;
+  }
+  .image_main img {
+    margin-top: 35px;
   }
   .title {
     top: 5%;

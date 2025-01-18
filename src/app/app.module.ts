@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -19,6 +19,12 @@ import { ModelCourseComponent } from './pages/components/model-course/model-cour
 import { GalleryComponent } from './pages/components/gallery/gallery.component';
 import { PhotosModel1Component } from './pages/components/gallery/photos-model1/photos-model1.component';
 import { PhotosModel2Component } from './pages/components/gallery/photos-model2/photos-model2.component';
+import { CourseComponent } from './pages/course/course.component';
+import { AboutCourseComponent } from './pages/components/about-course/about-course.component';
+import { CardDayComponent } from './pages/components/about-course/card-day/card-day.component';
+import { IncludedCourseComponent } from './pages/components/included-course/included-course.component';
+import { PageStudioComponent } from './pages/page-studio/page-studio.component';
+import { PageAwardsComponent } from './pages/page-awards/page-awards.component';
 
 @NgModule({
   declarations: [
@@ -39,12 +45,19 @@ import { PhotosModel2Component } from './pages/components/gallery/photos-model2/
     GalleryComponent,
     PhotosModel1Component,
     PhotosModel2Component,
+    CourseComponent,
+    AboutCourseComponent,
+    CardDayComponent,
+    IncludedCourseComponent,
+    PageStudioComponent,
+    PageAwardsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }
